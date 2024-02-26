@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Castaway Practice Layout</title>
+    <link href="styles.css" rel="stylesheet" />
+    <meta name="description" content="Castaway practice layout">
+</head>
+
+<body class="dm-sans-400">
+    <header>
+        <img src="images/logo.svg" width="160" height="33" class="logo" alt="logo image" />
+        <nav class="nav">
+            <ol>
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#episodes">Episodes</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ol>
+        </nav>
+    </header>
+    <section id="home" class="anchor">
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero.webp" />
+                <img src="images/hero.png" width="650" height="873" alt="hero image" />
+            </picture>
+            <img src="images/corner.svg" width="68" height="74" class="corner" alt="hero corner image" />
+        </div>
+        <div class="hero-title">
+            <h1 class="title dm-sans-400">Take your podcast to the
+                <span class="next">next</span>
+                <span class="dm-sans-700 level">level</span>
+            </h1>
+            <div class="contacts-container">
+                <span class="contacts-title">Listen on</span>
+                <ul class="contacts">
+                    <li><img src="images/contacts/IMAGE.svg" width="32" height="32" alt="contact 0 logo"></li>
+                    <li><img src="images/contacts/IMAGE-1.svg" width="32" height="32" alt="contact 1 logo"></li>
+                    <li><img src="images/contacts/IMAGE-2.svg" width="32" height="32" alt="contact 2 logo"></li>
+                    <li><img src="images/contacts/IMAGE-3.svg" width="32" height="32" alt="contact 3 logo"></li>
+                    <li><img src="images/contacts/IMAGE-4.svg" width="32" height="32" alt="contact 4 logo"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="episodes">
+        <div class="episodes-header">
+            <h2 class="episodes-title">Latest episodes</h2>
+            <a href="#all-episodes" class="view-all-episodes accent-button">View all episodes</a>
+        </div>
+        <ul class="episodes">
+            <li class="episode card">
+                <div class="episode-image">
+                    <picture>
+                        <source srcset="images/episodes/episode3.webp" />
+                        <img src="images/episodes/episode3.png" width="389" height="465" alt="episode3 image" />
+                    </picture>
+                </div>
+                <div class="episode-info">
+                    <ul class="episode-tags">
+                        <li class="episode-tag">Gear</li>
+                    </ul>
+                    <div class="episode-number">Episode 3</div>
+                    <div class="episode-title">Should you get outboard audio gear?</div>
+                    <div class="description">Is hardware really worth it when it comes to podcasting? The answer
+                        is...it depends. Here’s our reasons on why you might want to consider picking something up.
+                    </div>
+                    <a href="#details-3" class="view-all-episodes accent-button">View episode details</a>
+                </div>
+            </li>
+            <li class="episode card">
+                <div class="episode-image">
+                    <picture>
+                        <source srcset="images/episodes/episode2.webp" />
+                        <img src="images/episodes/episode2.png" width="389" height="432" alt="episode2 image" />
+                    </picture>
+                </div>
+                <div class="episode-info">
+                    <ul class="episode-tags">
+                        <li class="episode-tag">Tips & Tricks</li>
+                    </ul>
+                    <div class="episode-number">Episode 2</div>
+                    <div class="episode-title">Mic tricks to take you to the next level</div>
+                    <div class="description">Stop rolling with those default settings on your mic. These small tweaks
+                        will take you from sounding good to great.</div>
+                    <a href="#details-2" class="view-all-episodes accent-button">View episode details</a>
+                </div>
+            </li>
+            <li class="episode card">
+                <div class="episode-image">
+                    <picture>
+                        <source srcset="images/episodes/episode1.webp" />
+                        <img src="images/episodes/episode1.png" width="389" height="432" alt="episode1 image" />
+                    </picture>
+                </div>
+                <div class="episode-info">
+                    <ul class="episode-tags">
+                        <li class="episode-tag">Gear</li>
+                    </ul>
+                    <div class="episode-number">Episode 1</div>
+                    <div class="episode-title">The best microphone under $200</div>
+                    <div class="description">With so many microphones on the market, how are you supposed to know what’s
+                        the best? Take a look at our top picks.</div>
+                    <a href="#details-1" class="view-all-episodes accent-button">View episode details</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="anchor" id="about">
+        <div class="about-info">
+            <div class="about-meet">
+                <a href="#" class="arrow">
+                    <picture>
+                        <source srcset="images/arrow-right.webp" />
+                        <img src="images/arrow-right.png" width="71" height="38" alt="arrow right" />
+                    </picture>
+                </a>
+                <span>Meet your host</span>
+            </div>
+            <div class="about-title">Jacob Paulaner</div>
+            <div class="description">
+                <p>Jacob has a background in audio engineering, and has been podcasting since the early days.</p>
+                <p>He’s here to help you level up your game by sharing everything he’s learned along the way.</p>
+            </div>
+        </div>
+        <div class="about-image">
+            <picture>
+                <source srcset="images/about.webp" />
+                <img src="images/about.png" width="650" height="743" alt="about image" />
+            </picture>
+        </div>
+    </section>
+    <section class="anchor" id="contact">
+        <div class="card contact-card">
+            <div class="contact-info">
+                <div class="contact-sub">Email Newsletter</div>
+                <div class="contact-title">Subscribe for&nbsp;updates</div>
+            </div>
+
+            <form class="contact-form" action="/subscribe" onsubmit="return false">
+                <input name="name" type="text" placeholder="Name" class="form-field">
+                <input name="email" type="email" placeholder="Email" class="form-field">
+                <input type="submit" value="Submit" class="accent-button submit dm-sans-700" />
+            </form>
+            <img src="images/contact-corner.svg" width="147" height="191" class="contact-corner" alt="contact corner">
+        </div>
+    </section>
+    <section id="ratings">
+        <div class="rating card">
+            <div class="rating-stars">
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+            </div>
+            <div class="rating-title">I can’t recommend this podcast enough</div>
+            <div class="rating-description">Betty Lacey</div>
+        </div>
+        <div class="rating card">
+            <div class="rating-stars">
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+            </div>
+            <div class="rating-title">Jacob is the best in the business</div>
+            <div class="rating-description">Adam Driver</div>
+        </div>
+        <div class="rating card">
+            <div class="rating-stars">
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+            </div>
+            <div class="rating-title">A wealth of audio knowledge</div>
+            <div class="rating-description">Marcus Brown</div>
+        </div>
+        <div class="rating card">
+            <div class="rating-stars">
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+            </div>
+            <div class="rating-title">Every episode is a gem!</div>
+            <div class="rating-description">Jessica Knowl</div>
+        </div>
+        <div class="rating card">
+            <div class="rating-stars">
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+            </div>
+            <div class="rating-title">Whoa whoa, let me take some notes!</div>
+            <div class="rating-description">Scott Adams</div>
+        </div>
+        <div class="rating card">
+            <div class="rating-stars">
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+                <img src="images/star.svg" width="18" height="17" alt="star image" />
+            </div>
+            <div class="rating-title">I’ve upped my game considerably since I started listening</div>
+            <div class="rating-description">Steven Blast</div>
+        </div>
+    </section>
+    <footer>
+        <div class="socials">
+            <img src="images/logo-footer.svg" width="224" height="46">
+            <ul class="list list-h">
+                <li><a href="#"><img src="images/social/ig.svg" width="24" height="24" alt="instagram logo"></a></li>
+                <li><a href="#"><img src="images/social/tw.svg" width="24" height="24" alt="twitter logo"></a></li>
+                <li><a href="#"><img src="images/social/fb.svg" width="24" height="24" alt="facebook logo"></a></li>
+            </ul>
+        </div>
+        <ul class="list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Episodes</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="list">
+            <li><a href="#">Style Guide</a></li>
+            <li><a href="#">Instructions</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">Credit</a></li>
+            <li><a href="#">Powered by Webflow</a></li>
+            <li><a href="#">Licenses</a></li>
+        </ul>
+        <ul class="contacts">
+            <li><img src="images/contacts/IMAGE.svg" width="32" height="32" alt="contact 0 logo"></li>
+            <li><img src="images/contacts/IMAGE-1.svg" width="32" height="32" alt="contact 1 logo"></li>
+            <li><img src="images/contacts/IMAGE-2.svg" width="32" height="32" alt="contact 2 logo"></li>
+            <li><img src="images/contacts/IMAGE-3.svg" width="32" height="32" alt="contact 3 logo"></li>
+            <li><img src="images/contacts/IMAGE-4.svg" width="32" height="32" alt="contact 4 logo"></li>
+        </ul>
+    </footer>
+    <script>
+        const selected = document.getElementsByClassName('selected');
+        function selectMenuItem () {
+            const items = document.querySelectorAll('.nav-item a');
+            selected[0]?.classList.remove('selected');
+            for (const item of items) {
+                if (item.getAttribute('href') == location.hash) {
+                    item.classList.add('selected');
+                    break;
+                }
+            }
+
+        }
+        document.addEventListener('DOMContentLoaded', selectMenuItem)
+        window.addEventListener('hashchange', selectMenuItem)
+    </script>
+</body>
+
+</html>
