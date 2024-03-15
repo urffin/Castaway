@@ -5,6 +5,11 @@
     --alpha-text-color: rgb(255 255 255 / 0.7);
     --card-bg: #000000;
 }
+@font-face {
+    font-family: "DM Sans";
+    font-display: swap;
+    src: url("./DMSans-VariableFont_opsz,wght.ttf") format("truetype");
+}
 
 .dm-sans-400 {
     font-family: "DM Sans", sans-serif;
@@ -161,6 +166,7 @@ section {
 .episodes-header .view-all-episodes {
     margin-top: 24px;
     margin-bottom: 24px;
+    width: 178px;
 }
 .accent-button {
     border-radius: 6px;
@@ -177,7 +183,7 @@ section {
     padding-right: 10px;
 }
 .view-all-episodes {
-    width: 178px;
+    width: max-content;
     height: 51px;
     box-sizing: border-box;
 
